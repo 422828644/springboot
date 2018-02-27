@@ -10,6 +10,7 @@ public class UserInfo {
 
     @Id
     @GeneratedValue
+    @Column(nullable = false)
     private Integer id;
 
     @Column(nullable = false)
