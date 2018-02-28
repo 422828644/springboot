@@ -7,9 +7,9 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="org.*"/>
+    <context:component-scan base-package="org.linsoho.aop.*"/>
     <bean id="myGreeting" class="org.springframework.aop.framework.ProxyFactoryBean">
-        <property name="interfaces" value="myGreeting"/>
+        <property name="interfaces" value="org.linsoho.aop.entity.Greeting"/>
         <property name="target" value="myGreetingImpl" />
         <property name="interceptorNames" value="loveAdvice" />
         <property name="proxyTargetClass" value="true" />
