@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <pre>
+        1.accept:规定通过文件上传提交的文件的类型
+          alt:定义图像输入的替代文本
+          autocomplete:自动完成功能
+          autofocus:自动获得焦点
+    </pre>
+    <hr>
+    <form action="demo_form.php" onautocomplete="true" method="get">
+        First name: <input type="text" name="fname" value="Mickey"/><br/>
+        <!-- autofocus自动聚焦 -->
+        Last name: <input type="text" name="lname" value="Nick" autofocus/><br/>
+        <!-- file上传文件，accept接收所有audio/*(声音) video/*(视频) image/*(图片) MIME_type(MIME类型)文件。-->
+        <input type="file" name="pic" accept="image/*"/><br/>
+        <input type="checkbox" name="vehicle" value="Bike"/> I have a bike<br/>
+        <input type="submit" value="提交"/><br/>
+        <input type="image" src="http://www.runoob.com/try/demo_source/submit.gif" alt="Sumit" width="48" height="48"/><br/>
+    </form>
+    <br/>
+    <pre>
+        2.checked属性:页面加载时应该被预先选定
+    </pre>
+    <hr>
+    <form action="demo_form.php" method="get">
+        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br/>
+        <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br/>
+        <input type="radio" name="vehicle" value="Honda"> I have a Honda car<br/>
+        <input type="radio" name="vehicle" value="Toyoda" checked> I have a toyoda car<br/>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <pre>
+        3.disabled:规定应该禁用的input元素
+    </pre>
+    <hr>
+    <form action="demo_form.php">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname" disabled><br>
+        <input type="submit" value="提交">
+    </form>
+    <br/>
+    <pre>
+        4.绑定input元素的datalist的id.
+    </pre>
+    <hr/>
+    <form action="demo-form.php" method="get">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"/>
+            <option value="Firefox"/>
+            <option value="Google Chrome"/>
+            <option value="Opera"/>
+            <option value="Safari"/>
+        </datalist>
+        <input type="submit">
+    </form>
+    <br/>
+    <h1>
+        5.type
+    </h1>
+    <hr/>
+    <form>
+        <input type="color"/><br>
+        <input type="date"/><br>
+        <input type="image"/><br>
+        <input type="range"/><br>
+        <input type="reset"/><br>
+    </form>
+    <br/>
+    <h1>6.iframe</h1>
+    <hr/>
+    <iframe src="http://www.runoob.com" sandbox="allow-scripts; allow-forms"/>
+    <br/><br/><br/><br/>
+</body>
+</html>

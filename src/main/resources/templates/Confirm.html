@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Confirm Dialog</title>
+    <script>
+        function clickMe() {
+            var str;
+            var button = confirm("Clicked button");
+            if (button==true) {
+                str="you are select confirm";
+            } else {
+                str="your are select cancel";
+            }
+            document.getElementById("demo").innerHTML=str;
+        }
+    </script>
+</head>
+<body>
+    <div id="basePane" style="display: flex; flex-flow: column; alignment-baseline: center">
+        <p>Click the button, show confirm dialog!</p>
+        <button style="width: 10%;" onclick="clickMe()">Click me</button>
+        <p id="demo"></p>
+    </div>
+</body>
+</html>

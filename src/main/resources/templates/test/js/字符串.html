@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        p {
+            width: 200px;
+            height: 80px;
+            padding: 20px;
+            background-color: #cc3333;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var answer = "He is called 'Johnny'";
+        document.write(answer.constructor + '<br/>');
+        document.write(answer.length + '<br/>');
+        document.write(answer.charAt(14) + '<br/>');
+        document.write(answer.charCodeAt(14).toString());
+        function sku(name, price, qty) {
+            this.name = name;
+            this.price = price;
+            this.qty = qty;
+        }
+
+        var cola = new sku("Colo", 3, 1);
+        sku.prototype.volume = null;
+        cola.volume = "330ml";
+
+        document.write("<br/>");
+        document.write(cola.name);
+        document.write("<br/>");
+        document.write(cola.price);
+        document.write("<br/>");
+        document.write(cola.qty);
+        document.write("<br/>");
+        document.write(cola.volume);
+        document.write("<br/>");
+
+        function bigImg(x) {
+            x.style.height = "64px";
+            x.style.width = "64px";
+            console.log("make image bigger!");
+        }
+        function normalImg(x) {
+            x.style.height = "32px";
+            x.style.width = "32px";
+            console.log("make image normal!");
+        }
+        function moveOn(e) {
+            if (e) {
+                document.getElementById("left").innerHTML = "Thanks You";
+            }
+        }
+        function moveOut(e) {
+            if (e) {
+                document.getElementById("left").innerHTML = "Mouse Over Me";
+            }
+        }
+        var clickMe = (function () {
+            var count = 0;
+            return function () {
+                switch (count)
+                {
+                    case 0:
+                        document.getElementById("right").innerHTML += "<br/>Click Me Again";
+                        break;
+                    case 1:
+                        document.getElementById("right").innerHTML += "<br/>And Again "
+                        break;
+                    case 2:
+                        document.getElementById("right").innerHTML = "Thank You";
+                        break;
+                    case 3:
+                        document.getElementById("right").innerHTML = "Goodbye";
+                        break;
+                    case 4:
+                        document.getElementById("right").style.visibility = "hidden";
+                        count = -1;
+                        break;
+                }
+                return count += 1;
+            }
+        })();
+        window.
+    </script>
+    <img src="../../../static/images/cat.jpg" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)">
+    <p id="left" onmouseover="moveOn(this)" onmouseleave="moveOut(this)">Mouse Over Me</p>
+    <p id="right" onmousedown="clickMe(this)">Click Me</p>
+</body>
+</html>

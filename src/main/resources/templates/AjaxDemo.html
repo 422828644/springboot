@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ajax 测试页面</title>
+    <script type="text/javascript">
+        function showCustomer(str) {
+            var xmlhttp;
+            if (str=="") {
+                document.getElementById("txtHint").innerHTML="";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                xmlhttp=new XMLHttpRequest();
+            } else {
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function () {
+                if (xmlhttp.readyState==4 && xmlhttp.state==200) {
+                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+                    console.log(xmlhttp.responseText);
+                }
+            }
+            xmlhttp.open("GET", "http://localhost:8080/success.txt", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <button onclick="showCustomer()">点击</button>
+    </form>
+    <div id="txtHint">信息将显示在这...</div>
+</body>
+</html>

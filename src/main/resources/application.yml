@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8080
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -13,8 +13,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
   thymeleaf:
-    mode: HTML5
-    encoding: UTF-8
-    content-type: text/xml
     cache: false
-debug: true
+debug: false
+

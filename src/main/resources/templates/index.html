@@ -1,6 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8" />
+</head>
 <body>
-    <div id="footer :: copy"></div>
+    <div class="login_frame input_login">
+        <div class="weui-desktop-global-mod">
+            <div class="weui-desktop-global__info">
+                <h3>登录</h3>
+            </div>
+        </div>
+        <form class="login_form" autocomplete="on">
+            <div class="login_input_panel">
+                <div class="login_input">
+                    <i class="icon_login un"></i>
+                    <div class="weui-desktop-form__input-area">
+                        <span class="weui-desktop-form__input-wrp"></span>
+                        <input class="weui-desktop-form__input" name="account" placeholder=""/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
