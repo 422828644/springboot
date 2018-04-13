@@ -15,6 +15,6 @@ public class HelloController {
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap map) {
         map.addAttribute("host", "http://blog.didispace.com/");
-        return "/index";
+        return "index";
     }
 }

@@ -18,8 +18,13 @@
             text-align: center;
         }
     </style>
+    <!--<script src="../jQuery/jquery.min.js"/>-->
 </head>
 <body>
+    <img src="../../../static/images/cat.jpg" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)"/><br/>
+    <button type="button" id="myBtn">点击</button>
+    <p id="left" onmouseover="moveOn(this)" onmouseleave="moveOut(this)">Mouse Over Me</p>
+    <p id="right" onmousedown="clickMe(this)">Click Me</p>
     <script>
         var answer = "He is called 'Johnny'";
         document.write(answer.constructor + '<br/>');
@@ -91,10 +96,31 @@
                 return count += 1;
             }
         })();
-        window.
+
+        var flag = false;
+        function fade() {
+            if (flag) {
+                document.getElementsByTagName("p").style.opacity = "hide";
+                flag = true;
+            } else {
+                document.getElementsByTagName("p").style.opacity = "show";
+                flag = false;
+            }
+        }
+        document.getElementById("myBtn").addEventListener("click", fade);
+
+//        $(document).ready(function () {
+//            var flag = false;
+//            $("button").click(function () {
+//                if (flag) {
+//                    $("p").fadeOut();
+//                    flag = true;
+//                } else {
+//                    $("p").fadeIn();
+//                    flag = false;
+//                }
+//            })
+//        })
     </script>
-    <img src="../../../static/images/cat.jpg" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)">
-    <p id="left" onmouseover="moveOn(this)" onmouseleave="moveOut(this)">Mouse Over Me</p>
-    <p id="right" onmousedown="clickMe(this)">Click Me</p>
 </body>
 </html>

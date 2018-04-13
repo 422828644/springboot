@@ -21,8 +21,8 @@ function clock() {
     var hrs = time.getHours();
     var hr = -1.57 + Math.PI * hrs/6 + Math.PI * parseInt(time.getMinutes())/360;
     for (var i=0;i < dots;++i) {
-        document.getElementById("dig" + (i+1)).style.top = Ypos- 15 + 40 * Math.sin(-0.49 + dots + i / 1.9).toString() + "px";
-        document.getElementById("dig" + (i+1)).style.left = Xpos - 14 + 40 * Math.cos(-0.49 + dots + i / 1.9).toString() + "px";
+        document.getElementById("dig" + (i+1)).style.top = Ypos + 2 * Math.sin(-0.49 + dots + i / 1.9).toString() + "px";
+        document.getElementById("dig" + (i+1)).style.left = Xpos + 2 * Math.cos(-0.49 + dots + i / 1.9).toString() + "px";
     }
     for (var i=0;i < S.length;i++) {
         document.getElementById("sec" + (i+1)).style.top = Ypos + i * Ybase * Math.sin(sec).toString() + "px";

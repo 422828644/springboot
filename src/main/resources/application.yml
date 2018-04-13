@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 34525
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://127.0.0.1:5432/syncrock_be
-    data-username: admin
-    data-password: admin
+    data-username: postgres
+    data-password: postgres
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,5 +14,6 @@ spring:
     generate-ddl: true
   thymeleaf:
     cache: false
+    mode: LEGACYHTML5
 debug: false
 

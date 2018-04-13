@@ -13,6 +13,6 @@ public class ClockController {
 
     @RequestMapping(value = "/clock", method = RequestMethod.GET)
     public String getClock() {
-        return "/test/js/clock";
+        return "test/js/clock";
     }
 }
