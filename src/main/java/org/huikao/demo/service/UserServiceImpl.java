@@ -1,4 +1,4 @@
-package com.huikao.demo.service;
+package org.huikao.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -1,7 +1,7 @@
-package com.huikao.demo.controller;
+package org.huikao.demo.controller;
 
-import com.huikao.demo.domain.UserInfo;
-import com.huikao.demo.domain.UserInfoRepository;
+import org.huikao.demo.domain.UserInfo;
+import org.huikao.demo.domain.UserInfoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

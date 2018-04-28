@@ -1,7 +1,7 @@
 package org.linsoho.jdbcTemplate;
 
-import com.huikao.demo.Application;
-import com.huikao.demo.service.UserService;
+import org.huikao.demo.Application;
+import org.huikao.demo.service.UserService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

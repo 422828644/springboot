@@ -1,4 +1,4 @@
-package com.huikao.demo.domain;
+package org.huikao.demo.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

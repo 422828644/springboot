@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/vue.min.js"></script>
+    <style>
+        .class1{
+            background: #444;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div v-html="message"></div>
+        <label for="r1">修改颜色</label>
+        <input type="checkbox" v-model="class1" id="r1"/>
+        <br/><br/>
+        <div v-bind:class="{'class1':class1}">
+            directiva v-bind:class
+        </div>
+        <p v-if="seen">现在你看到我了</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: '<h1>Hello Vue.js!</h1>',
+                class1: false,
+                seen: true
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.huikao.demo.controller;
+package org.huikao.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -14,7 +14,7 @@ public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(ModelMap map) {
-        map.addAttribute("host", "http://blog.didispace.com/");
+        map.addAttribute("host", "http://blog.didispace.org/");
         return "index";
     }
 }

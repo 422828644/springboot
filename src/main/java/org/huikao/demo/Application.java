@@ -1,4 +1,4 @@
-package com.huikao.demo;
+package org.huikao.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

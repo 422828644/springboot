@@ -1,4 +1,4 @@
-package com.huikao.demo.service;
+package org.huikao.demo.service;
 
 /**
  * Created by admin on 2018/3/1.

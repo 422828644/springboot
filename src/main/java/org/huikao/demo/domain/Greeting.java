@@ -1,4 +1,4 @@
-package com.huikao.demo.domain;
+package org.huikao.demo.domain;
 
 /**
  * Created by admin on 2018/4/2.

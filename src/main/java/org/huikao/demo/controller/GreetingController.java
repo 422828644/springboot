@@ -1,6 +1,6 @@
-package com.huikao.demo.controller;
+package org.huikao.demo.controller;
 
-import com.huikao.demo.domain.Greeting;
+import org.huikao.demo.domain.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

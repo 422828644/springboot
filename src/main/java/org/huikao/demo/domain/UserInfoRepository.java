@@ -1,4 +1,4 @@
-package com.huikao.demo.domain;
+package org.huikao.demo.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
